@@ -1,93 +1,126 @@
+@import url(fonts/cantarell/);
+
 * {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: ubuntu, sans-serif;
-  background: #bbbbdd;
-}
-
-/* Style the header */
-header {
-  background-image: url('assets/image/headerbackground.webp');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  padding: 30px;
-  text-align: left;
-  text-shadow: 4px 4px 5px #000000;
-  font-size: 35px;
-  color: #FFFFFF;
-}
-
-.logo{
+	box-sizing: border-box;
+	font-family: cantarell;
 	color: white;
-	content; "PLANET CHIPPER";
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(0, 0, 28);
+	font-family:cursive;
+}
+
+.nav ul {
+	margin: 0;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+	padding: .5em;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.main-nav {
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.main-nav li {
+	padding: 0% 5%;
+}
+
+.nav a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header{
+	background-color: rgb(15, 5, 64);
+	padding: 5px;
+}
+
+.banner{
+	background: center / contain no-repeat url(img/PlanetChipperHomepage.png);
+	background-color: black;
+	height: 60vh;
+	background-size: 1535px;
+}
+
+.downloadbutton{
+	background-color: rgb(0, 0, 0, .6);
+	background-image: url(/img/Osaka_Stars_side.png);
+	background-blend-mode: multiply;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 1.5%;
+	margin: 500px 50px;
+}
+
+.bodytext-section{
+	text-align: center;
+	margin: 1em;
+}
+
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+
+.section-header{
+	font-size: 2.5em;
+}
+
+.main-footer{
+	background-color: rgb(0, 0, 15);
+	padding: 1.1em;
+}
+
+.main-footer-container{
 	display: flex;
-	justify-content: center;
+	margin: 1em;
+}
+
+.gallery-item{
+	margin: 30px;
+}
+
+.gallery-item-title{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+.gallery-item-image{
+	height: 350px;
+}
+
+.gallery-item-details{
+	display: flex;
 	align-items: center;
-	height: 55px;
-	width: 15%;
-	font-weight: 700;
-	background: var(--primary-color);
+	padding: 5px;
+	text-align: center;
+	width: 100%;
 }
 
-/* Create two columns/boxes that floats next to each other */
-aside {
-  float: left;
-  width: 30%;
-  height: 500px;
-  background: #bbbbdd;
-  padding: 20px;
+.gallery-item-desc{
+	flex-grow: 1;
 }
 
-/* Style the list inside the menu */
-/*nav ul {
-  list-style-type: none;
-  padding: 0;
-}*/
-
-article {
-  float: left;
-  padding: 0px;
-  width: 70%;
-  background-color: #aaaaee;
-  height: 500px;
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #707070;
-  padding: 10px;
-  text-align: left;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-
-iframe {
-  border: none;
-  padding: 0px;
-}
-
-.banner(
-    background: url(img/PlanetChipperHomepage.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachmnent: fixed;
-    height: 85vh;
+.gallery-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
